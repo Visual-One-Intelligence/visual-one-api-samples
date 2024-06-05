@@ -8,4 +8,4 @@ set ACCESSTOKEN="<your_access_token>"
 
 curl --request GET \
 	--url %URL% \
-	--header 'Authorization: key-%ACCESSTOKEN%'
+	--header 'Authorization: %ACCESSTOKEN%'

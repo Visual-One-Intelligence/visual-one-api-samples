@@ -14,7 +14,7 @@ var request = new HttpRequestMessage
 	RequestUri = new Uri(url),
 	Headers =
 	{
-		{ "Authorization", "Bearer key-" + accessToken },
+		{ "Authorization", "Bearer " + accessToken },
 	},
 };
 

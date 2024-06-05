@@ -9,7 +9,7 @@ const accessToken = '<your_access_token>';
 const options = {
 	method: 'GET',
 	headers: {
-    Authorization: `Bearer key-${accessToken}`,
+    Authorization: `Bearer ${accessToken}`,
 	}
 };
 

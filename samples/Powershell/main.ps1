@@ -7,5 +7,5 @@ $url = "https://visual1intelligence.com/api/v6/report/$report/?client_id=$client
 $accessToken = "<your_access_token>"
 
 $headers=@{}
-$headers.Add("Authorization", "Bearer key-$accessToken")
+$headers.Add("Authorization", "Bearer $accessToken")
 $response = Invoke-WebRequest -Uri $url -Method GET -Headers $headers

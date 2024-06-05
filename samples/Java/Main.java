@@ -8,7 +8,7 @@ String accessToken = "<your_access_token>"
 
 HttpRequest request = HttpRequest.newBuilder()
 		.uri(URI.create(url))
-		.header("Authorization", "Bearer key-" + accessToken)
+		.header("Authorization", "Bearer " + accessToken)
 		.method("GET", HttpRequest.BodyPublishers.noBody())
 		.build();
 HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());

@@ -9,7 +9,7 @@ url = f"https://visual1intelligence.com/api/v6/report/{report}?client_id={client
 access_token = '<your_access_token>'
 
 headers = {
-    'Authorization': f"Bearer key-{access_token}"
+    'Authorization': f"Bearer {access_token}"
 }
 
 response = requests.get(url, headers=headers)
